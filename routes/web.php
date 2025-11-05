@@ -16,3 +16,6 @@ Route::get('/about', function(){
     $myage = 23;
     return view('about')->with('name',$myname,)->with('age',$myage);
 });
+Route::get('/services/{name}', function($name){
+    return view('services')->with('name',$name,);
+});
