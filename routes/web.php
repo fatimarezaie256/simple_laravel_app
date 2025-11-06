@@ -11,11 +11,9 @@ Route::get('/contact', function () {
 Route::get('/', function () {
     return "Hi this is the home page";
 });
-Route::get('/about', function(){
-    $myname = "sara";
-    $myage = 23;
-    return view('about')->with('name',$myname,)->with('age',$myage);
-});
+Route::view('/about','about');
 Route::get('/services/{name}', function($name){
     return view('services')->with('name',$name,);
+
 });
+Route::view('/home/{name}', 'home');

@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./resources/css/style1.css">
-    <style>
-        #heading{
-            color:"blue";
-        }
-    </style>
 </head>
 <body>
-    <h1 id="heading">About us page</h1>
-    <h2>{{ $name}}</h2>
-    <h2>{{ $age}}</h2>
+    <h1 style="text-align:center">" About us page "</h1>
+  
+    @include("subview.input")
 </body>
 </html>

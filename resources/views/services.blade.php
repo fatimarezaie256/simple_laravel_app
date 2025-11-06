@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>this is services page</h1>
+    <h1 style="text-align:center">this is services page</h1>
      @if($name==="cooking")
        <h1>you are hired to do cooking</h1>
        @elseif($name === "cleaning")
