@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+     <h1>I am {{ $name }} with having id {{ $id }}</h1>
 </body>
 </html>

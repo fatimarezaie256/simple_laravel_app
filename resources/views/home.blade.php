@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+@extends("layout.app");
+   @section("styles");
     <style>
         *{
             margin: 0;
@@ -37,6 +33,7 @@
         }
         .p{
             margin:16px;
+            font-size:23px;
         }
         .header{
             font-size:50px;
@@ -53,34 +50,32 @@
             color: white;
             text-align:center;
         }
+        .content{
+            display:flex;
+             border:1px solid black;
+        }
+        .img{
+            height:300px;
+            width: 400px;
+        
+        }
     </style>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="/home">home</a></li>
-            <li><a href="/services">services</a></li>
-            <li><a href="/about">about</a></li>
-            <li><a href="/contact">contact</a></li>
-        </ul>
-    </nav>
-    <section>
-        <div>
-            <h1 class="header">Home page</h1>
-            <div>
-                <h1>Who we are?</h1>
-                 <p class= "p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam, consequuntur labore unde facere adipisci saepe et maxime voluptate eveniet quo! Sapiente dignissimos esse quis error perspiciatis voluptatem corrupti eligendi. 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus sunt, debitis nostrum obcaecati aspernatur culpa reiciendis facere magnam consequatur. Consequatur odit fuga cum suscipit omnis optio blanditiis similique minus!
-                 </p>
-                 
+    @endsection 
 
+  
+    <section id="content" class = "mainsection">
+        <div >
+            <h1 class="header">Home page</h1>
+            <div >
+                <h1>Who we are?</h1>
+                <div class="content">
+                 <p class= "p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam, consequuntur labore unde facere adipisci saepe et maxime voluptate eveniet quo! Sapiente dignissimos esse quis error perspiciatis voluptatem corrupti eligendi. 
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iusto maiores aliquam maxime magnam. Alias recusandae repellat aut laboriosam incidunt voluptate, labore molestias obcaecati ex, provident non, doloremque corporis officiis.  
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus sunt, debitis nostrum obcaecati aspernatur culpa reiciendis facere magnam consequatur. Consequatur odit fuga cum suscipit omnis optio blanditiis similique minus!
+                 </p>
+                 <img class="img" src="https://media.istockphoto.com/id/1883285965/photo/an-unrecognizable-businesswoman-working-in-her-office-on-her-computer.webp?a=1&b=1&s=612x612&w=0&k=20&c=jx0Npn3jxtWjL7WpGzKtfL58_OxprChBqUmUSXXF-gY=" alt="">
+    </div>
             </div>
         </div>
     </section>
-    <footer>
-    <div class="foter">
-       <h1>2025 &copy; desined by Fatima Rezaie </h1>
-    </div>
-    </footer>
-</body>
-</html>
+   
